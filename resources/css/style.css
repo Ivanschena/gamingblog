@@ -1,0 +1,6 @@
+.header{
+    background-image: url(./../../public/img/psx.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: fit;
+}
