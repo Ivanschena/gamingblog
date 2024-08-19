@@ -1,6 +1,165 @@
-.header{
+.header {
     background-image: url(./../../public/img/psx.jpg);
     height: 400px;
     background-position: center;
     background-size: fit;
 }
+
+/* body {
+    margin: 0;
+    background: #000;
+}
+
+#playScene {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+
+.slide {
+    display: none;
+    transition: 0.15s;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+
+    &.screen-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        font-family: 'Arial';
+        animation: logo 0.25s linear backwards;
+        animation-delay: 0.5s;
+        background: #000;
+
+        .logo {
+            animation: logo 0.25s linear backwards;
+            animation-delay: 0.75s;
+        }
+
+        .title {
+            transform: scaleX(0.8);
+            font-size: 48px;
+            margin-bottom: 16px;
+            animation: logo 0.4s linear backwards;
+            animation-delay: 1s;
+
+            span {
+                font-size: 16px;
+            }
+        }
+
+        .subtitle {
+            letter-spacing: 1.2px;
+            animation: logo 0.4s linear backwards;
+            animation-delay: 0.90s;
+
+            span {
+                font-size: 10px;
+            }
+        }
+    }
+
+    &.screen-1 {
+        color: #0C349B;
+        background: #fff;
+        animation: logo 1s linear backwards;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+            font-size: 64px;
+            color: #2C459B;
+
+            margin-bottom: 64px;
+            margin-top: -64px;
+
+            font-weight: bold;
+            transform: scaleX(1.4)
+        }
+
+        .subtitle {
+            margin-top: 80px;
+            font-family: Arial;
+            font-size: 48px;
+            line-height: 32px;
+            transform: scaleX(1.2);
+
+            span {
+                font-size: 33px;
+            }
+        }
+
+        .title,
+        .subtitle {
+            animation: logo 0.5s linear backwards;
+            animation-delay: 2.5s;
+        }
+
+        .logo {
+            $logo-size: 200px;
+            display: inline-block;
+            width: $logo-size;
+            height: $logo-size;
+            background: linear-gradient(45deg, #CA2820 0%, #EBF415 50%, #CA2820 100%);
+            transform: rotate(45deg);
+
+            animation: logo 0.25s linear backwards;
+            animation-delay: 1s;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #f00;
+                width: 100%;
+                height: 100%;
+            }
+
+            &:before {
+                background: linear-gradient(45deg, #CA2820 0%, #EBF415 50%, transparent 51%, transparent 100%);
+                animation: logo-triangle-1 1s linear forwards;
+                animation-delay: 1.25s;
+            }
+
+            &:after {
+                background: linear-gradient(45deg, transparent 0%, transparent 50%, #EBF415 51%, #CA2820 100%);
+                animation: logo-triangle-2 1s linear forwards;
+                animation-delay: 1.25s;
+            }
+        }
+    }
+}
+
+@keyframes logo {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes logo-triangle-1 {
+    to {
+        transform: translate(-17.5%, -17.5%) scale(0.35)
+    }
+}
+
+@keyframes logo-triangle-2 {
+    to {
+        transform: translate(17.5%, 17.5%) scale(0.35)
+    }
+} */

@@ -21,16 +21,23 @@ class GameController extends Controller
         $game->save(); */
         //QUI SOTTO LA FRECCETTONA PERCHE' L?ARRAY CHIAVE VALORE 
         /* $game =  */
+        if (!$request->file('cover')) {
+            $img = 'default/default.png';
+        } else {
+            $img = $request->file('cover')->store('public/covers');
+        }
         Game::create([
             'title' => $request->title,
             'producer' => $request->producer,
             'price' => $request->price,
             'description' => $request->description,
+            'cover' => $img,
         ]);
         return redirect(route('homepage'))->with('gameCreated', 'Videogame ricevuto!');
     }
-    public function index (){
+    public function index()
+    {
         $games = Game::all();
-        return view ('game.index',compact('games'));
+        return view('game.index', compact('games'));
     }
 }

@@ -10,6 +10,7 @@
 <body>
     <x-navbar></x-navbar>
     <x-header></x-header>
+    
     <div class="min-vh-100">
         
         {{$slot}}
