@@ -1,5 +1,8 @@
 <?php
 
+use Carbon\Laravel\ServiceProvider;
+use NunoMaduro\Collision\Provider;
+
 return [
 
     /*
@@ -122,5 +125,16 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+
+    'providers' => ServiceProvider::defaultProviders()->merge([
+
+
+        App\Providers\FortifyServiceProvider::class
+
+
+    ])->toArray(),
+
+
+
 
 ];

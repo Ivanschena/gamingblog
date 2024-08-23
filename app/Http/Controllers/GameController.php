@@ -6,8 +6,25 @@ use App\Http\Requests\GameRequest;
 use App\Models\Game;
 use Illuminate\Http\Request;
 
+
 class GameController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth'); //!protegge tutti i metodi (bisogna inserire nel controller.php il blocco di codice qui sotto)
+        // $this->middleware('auth')->only('create'); //! protegge solo un metodo 
+        $this->middleware('auth')->except('index', 'show'); //! eccetto quel metodo show è un esempio
+        /* 
+        use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+
+abstract class Controller extends \Illuminate\Routing\Controller
+{
+    use AuthorizesRequests;
+}
+        */
+
+    }
+
     public function create()
     {
         return view('game.create');

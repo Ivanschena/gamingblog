@@ -163,3 +163,17 @@
         transform: translate(17.5%, 17.5%) scale(0.35)
     }
 } */
+*:hover {
+    box-shadow: 10px 10px 18px red;
+    transition-duration: 1sec;
+    border-radius: 10px;
+    text-shadow: 5px 5px 5px orange ;
+    
+}
+
+/* *{
+    box-shadow: 10px 10px light;
+    transition-duration: 1sec;
+
+
+} */

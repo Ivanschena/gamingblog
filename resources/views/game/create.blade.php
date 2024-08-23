@@ -15,7 +15,7 @@
     </div>
     <div class="container my-5">
         <div class="row">
-            <div class="p-5 shadow col-12 col-md-8">
+            <div class="p-5 shadow-lg col-12 col-md-8">
                 <form action="{{ route('game.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-3">
