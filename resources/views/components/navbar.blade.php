@@ -50,6 +50,9 @@
               </form>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('cmfvt')}}">CMFVT</a>
+          </li>
           @endguest
           <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>

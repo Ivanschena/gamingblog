@@ -27,3 +27,5 @@ Route::get('/console/edit/{console}',[ConsoleController::class,'edit'])->name('c
 Route::put('/console/update/{console}',[ConsoleController::class,'update'])->name('console.update');
 
 Route::delete('/console/destroy/{console}',[ConsoleController::class,'destroy'])->name('console.destroy');
+
+Route::get('/cmfvt',[PublicController::class,'cmfvt'])->name('cmfvt');

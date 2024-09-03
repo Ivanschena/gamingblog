@@ -169,7 +169,7 @@
     border-radius: 10px;
     text-shadow: 5px 5px 5px orange ;
     
-}
+} 
 
 /* {
     box-shadow: 10px 10px light;
@@ -177,3 +177,30 @@
 
 
 } */
+/* 
+.NeonContainer {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.neon-box {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(0, 255, 255, 0.5), 0 0 60px rgba(0, 255, 255, 0.5);
+    text-align: center;
+}
+
+.neon-box h1, .neon-box p {
+    margin: 0;
+    padding: 10px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+ */

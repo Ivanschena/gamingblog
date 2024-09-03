@@ -36,10 +36,21 @@
                             
                         @enderror"
                             id="producer" name="producer" value="{{ old('producer') }}">
+
                         @error('producer')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
+                        <div class="mb-3">
+                            <label class="form-label">Console disponibili</label><br>
+                            @foreach ($consoles as $console)
+                                <input class="form-check-input" name="consoles[]" type="checkbox"
+                                    value="{{ $console->id }}" id="{{ $console->id }}">
+                                <label class="form-check-label" for="{{ $console->id }}">
+                                    {{ $console->name }}
+                                </label><br>
+                            @endforeach
 
+                        </div>
                         <label for="price" class="form-label">Prezzo del videogame</label>
                         <input type="number"
                             class="form-control @error('price') is-invalid

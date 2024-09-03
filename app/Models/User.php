@@ -44,4 +44,13 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    //!Un utente può creare tante consoles
+    public function consoles()
+    {
+        return $this->hasMany(Console::class);
+    //!La classe utente ha più element di Console::class
+    }
+    public function games(){
+        return $this->hasMany(Game::class);
+    }
 }
