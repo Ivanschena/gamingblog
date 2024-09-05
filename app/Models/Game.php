@@ -15,17 +15,19 @@ class Game extends Model
         'price',
         'description',
         'cover',
-        'user_id',
+        'user_id', //!Sempre ricordarsi il fillable
     ];
+        public function user (){
+            return $this->belongsTo(User::class);
+        }//!Viene usata per l'attraversamento del modello
+        public function consoles (){ 
+            return $this->belongsToMany(Console::class);
+        }
+}
+
+
     /* OPPURE  protected $fillable = [
         'title',
         'author',
         'cover',
         'plot'  ]; */
-        public function user (){
-            return $this->belongsTo(User::class);
-        }
-        public function consoles (){
-            return $this->belongsToMany(Console::class);
-        }
-}

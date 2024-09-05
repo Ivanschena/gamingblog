@@ -21,7 +21,6 @@
                             {{$game->title}}
                         </label><br>
                         @endforeach
-
                     </div>
                     <div class="mb-3">
                         <label for="brand" class="form-label">Brand</label>
@@ -35,15 +34,9 @@
                         <label for="description" class="form-label">Descrizione</label>
                         <textarea name="description" id="description" cols="30" rows="5" class="form-control"></textarea>
                     </div>
-
                     <button type="submit" class="btn btn-primary">Inserisci</button>
                 </form>
             </div>
         </div>
     </div>
-
-
-
-
-
 </x-layout>

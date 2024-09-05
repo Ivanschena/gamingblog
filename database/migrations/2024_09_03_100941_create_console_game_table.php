@@ -6,23 +6,19 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
+    //! php artisan make:migration create_console_game_table 
+    //! (singolare ed ordine alfabetico dei modelli da mixare)
     public function up(): void
     {
         Schema::create('console_game', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('console_id');
+            $table->unsignedBigInteger('console_id');//!riferisci simmetricamente
             $table->foreign('console_id')->references('id')->on('consoles');
-            $table->unsignedBigInteger('game_id');
+            $table->unsignedBigInteger('game_id');//!riferisci simmetricamente
             $table->foreign('game_id')->references('id')->on('games');
             //! $table->timestamps(); puoi eliminarlo in quanto non occorre
         });
     }
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('console_game');

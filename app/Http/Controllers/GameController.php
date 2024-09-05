@@ -24,9 +24,7 @@ abstract class Controller extends \Illuminate\Routing\Controller
     use AuthorizesRequests;
 }
         */
-
     }
-
     public function create()
     {
         $consoles = Console::all();
